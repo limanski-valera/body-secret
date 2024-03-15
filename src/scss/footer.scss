@@ -1,0 +1,59 @@
+.footer {
+    background-color: $pinkColor;
+    color: #fff;
+    padding: toRem(50) 0;
+    font-size: toRem(14);
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: toRem(40);
+        column-gap: toRem(50);
+        justify-content: space-between;
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: toRem(30);
+        }
+    }
+    &__main-info {
+        flex: 0 0 auto;
+        text-align: right;
+        text-transform: uppercase;
+        line-height: 1.3;
+        @media (max-width: $mobileSmall) {
+            text-align: center;
+        }
+        @media (max-width: $mobileSmall) {
+            order: 2;
+        }
+    }
+    &__decor {
+        flex: 0 0 auto;
+        text-align: center;
+        font-size: toRem(22);
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.4;
+        text-shadow:
+            0px 0.7px 0 rgb(0, 0, 0),
+            0px -0.7px 0 rgb(0, 0, 0),
+            0.7px 0px 0 rgb(0, 0, 0),
+            -0.7px 0px 0 rgb(0, 0, 0),
+            0.7px 0.7px 0 rgb(0, 0, 0),
+            0.7px -0.7px 0 rgb(0, 0, 0),
+            -0.7px 0.7px 0 rgb(0, 0, 0),
+            -0.7px -0.7px 0 rgb(0, 0, 0);
+        @media (max-width: $mobileSmall) {
+            order: 1;
+        }
+    }
+    &__bottom-row {
+        flex: 0 0 100%;
+        text-align: center;
+        @media (max-width: $mobileSmall) {
+            order: 3;
+        }
+    }
+    &__link {
+    }
+}
