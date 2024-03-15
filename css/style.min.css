@@ -388,20 +388,11 @@ body::after {
     animation: buttonBounce 0.5s ease-in-out;
   }
 }
-.button ._big {
-  font-weight: 800;
-  font-size: 1.2em;
-}
 .button--white {
   color: #fff;
   text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0);
   position: relative;
   padding: 0;
-}
-.button--white ._value {
-  display: inline-block;
-  padding: 0.75rem 1.875rem;
-  background-color: #bcdd79;
 }
 .button--white::before {
   content: "";
@@ -414,6 +405,59 @@ body::after {
   box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5647058824);
   z-index: -1;
 }
+.button__content {
+  position: relative;
+  z-index: 2;
+}
+.button--white .button__content {
+  display: inline-block;
+  padding: 0.75rem 1.875rem;
+  background-color: #bcdd79;
+}
+.button__prices {
+  position: relative;
+}
+.button__sale-price {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  padding: 0.625rem 1.25rem;
+  border-radius: 30px;
+  background-color: #fb64c3;
+  display: inline-block;
+  display: flex;
+  gap: 0.3125rem;
+  align-items: center;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0);
+}
+.button__sale-price img {
+  position: absolute;
+  width: 2.1875rem;
+  left: 100%;
+  transform: translateX(-50%);
+}
+.button__old-price {
+  font-weight: 800;
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+.button__old-price-value {
+  position: relative;
+}
+.button__old-price-value::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 0.0625rem;
+  background-color: #000;
+  transform: translate(-50%, 0) rotate(-15deg);
+}
+
 @keyframes buttonBounce {
   0% {
     transform: translate(0);
@@ -425,7 +469,6 @@ body::after {
     transform: translate(0);
   }
 }
-
 .marquee {
   max-width: 100%;
   background-color: #151516;
