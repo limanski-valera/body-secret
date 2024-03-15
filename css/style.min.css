@@ -1331,11 +1331,32 @@ body::after {
 .faq__title {
   padding: 1.25rem 0.9375rem;
   text-align: center;
-  font-size: 3.125rem;
   text-transform: uppercase;
   background-color: #fff;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+}
+@media (min-width: 49.875em) {
+  .faq__title {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 49.875em) {
+  @supports (font-size: clamp( 1.625rem , 0.6208158996rem  +  5.0209205021vw , 3.125rem )) {
+    .faq__title {
+      font-size: clamp( 1.625rem , 0.6208158996rem  +  5.0209205021vw , 3.125rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.625rem , 0.6208158996rem  +  5.0209205021vw , 3.125rem )) {
+    .faq__title {
+      font-size: calc(1.625rem + 1.5 * (100vw - 20rem) / 29.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .faq__title {
+    font-size: 1.625rem;
+  }
 }
 .faq__title:not(:last-child) {
   margin-bottom: 1.875rem;
