@@ -1446,7 +1446,6 @@ body::after {
   z-index: 2;
 }
 .service__container {
-  border-top: 1px solid #000;
   padding-bottom: 1.875rem;
   display: flex;
   flex-direction: column;
