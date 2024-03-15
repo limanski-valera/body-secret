@@ -984,7 +984,8 @@ body::after {
   position: relative;
 }
 .info-page__button-wrapper::before {
-  width: 50%;
+  width: 40%;
+  padding-bottom: 30%;
   display: inline-block;
   content: "";
   position: absolute;
@@ -992,30 +993,19 @@ body::after {
   right: calc(100% + 0.625rem);
   background: url("../img/arrow.svg") right top/contain no-repeat;
 }
-@media (min-width: 48em) {
+@media (max-width: 37.5em) {
   .info-page__button-wrapper::before {
-    height: 6.25rem;
+    width: 30%;
   }
 }
-@media (min-width: 30em) and (max-width: 48em) {
-  @supports (height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem )) {
-    .info-page__button-wrapper::before {
-      height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem );
-    }
-  }
-  @supports not (height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem )) {
-    .info-page__button-wrapper::before {
-      height: calc(3.125rem + 3.125 * (100vw - 30rem) / 18);
-    }
-  }
-}
-@media (max-width: 30em) {
+@media (max-width: 34.375em) {
   .info-page__button-wrapper::before {
-    height: 3.125rem;
+    width: 25%;
   }
 }
 @media (max-width: 29.99875em) {
   .info-page__button-wrapper::before {
+    width: 15%;
     right: 100%;
   }
 }
@@ -1294,7 +1284,8 @@ body::after {
   position: relative;
 }
 .faq__button-wrapper::before {
-  width: 50%;
+  width: 40%;
+  padding-bottom: 30%;
   display: inline-block;
   content: "";
   position: absolute;
@@ -1302,30 +1293,19 @@ body::after {
   right: calc(100% + 0.625rem);
   background: url("../img/arrow.svg") right top/contain no-repeat;
 }
-@media (min-width: 48em) {
+@media (max-width: 37.5em) {
   .faq__button-wrapper::before {
-    height: 6.25rem;
+    width: 30%;
   }
 }
-@media (min-width: 30em) and (max-width: 48em) {
-  @supports (height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem )) {
-    .faq__button-wrapper::before {
-      height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem );
-    }
-  }
-  @supports not (height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem )) {
-    .faq__button-wrapper::before {
-      height: calc(3.125rem + 3.125 * (100vw - 30rem) / 18);
-    }
-  }
-}
-@media (max-width: 30em) {
+@media (max-width: 34.375em) {
   .faq__button-wrapper::before {
-    height: 3.125rem;
+    width: 25%;
   }
 }
 @media (max-width: 29.99875em) {
   .faq__button-wrapper::before {
+    width: 15%;
     right: 100%;
   }
 }
@@ -1459,7 +1439,8 @@ body::after {
   }
 }
 .service__button-wrapper::before {
-  width: 50%;
+  width: 40%;
+  padding-bottom: 30%;
   display: inline-block;
   content: "";
   position: absolute;
@@ -1467,30 +1448,19 @@ body::after {
   right: calc(100% + 0.625rem);
   background: url("../img/arrow.svg") right top/contain no-repeat;
 }
-@media (min-width: 48em) {
+@media (max-width: 37.5em) {
   .service__button-wrapper::before {
-    height: 6.25rem;
+    width: 30%;
   }
 }
-@media (min-width: 30em) and (max-width: 48em) {
-  @supports (height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem )) {
-    .service__button-wrapper::before {
-      height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem );
-    }
-  }
-  @supports not (height: clamp( 3.125rem , -2.0833333333rem  +  17.3611111111vw , 6.25rem )) {
-    .service__button-wrapper::before {
-      height: calc(3.125rem + 3.125 * (100vw - 30rem) / 18);
-    }
-  }
-}
-@media (max-width: 30em) {
+@media (max-width: 34.375em) {
   .service__button-wrapper::before {
-    height: 3.125rem;
+    width: 25%;
   }
 }
 @media (max-width: 29.99875em) {
   .service__button-wrapper::before {
+    width: 15%;
     right: 100%;
   }
 }
