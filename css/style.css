@@ -804,6 +804,9 @@ body::after {
   height: 100%;
   display: flex;
 }
+.main-block__images picture {
+  flex: 0 0 50%;
+}
 .main-block__image {
   width: 100%;
   flex: 0 0 50%;
